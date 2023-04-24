@@ -1,0 +1,4 @@
+cd ..
+./gradlew clean
+./gradlew build
+./gradlew javadoc
