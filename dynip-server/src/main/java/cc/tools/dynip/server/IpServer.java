@@ -843,7 +843,7 @@ public final class IpServer extends HttpServlet {
 	 */
 	private void logSevereMessageToServerLogAndRespond(HttpServletResponse response, String message) {
 		try {
-			response.getWriter().append("client key is bad.");
+			response.getWriter().append(message);
 			Logger.getLogger(IpServer.class.getName()).log(Level.SEVERE, "error: " + message);
 		} catch (IOException exception) {
 			logExceptionToServerLog(exception);
